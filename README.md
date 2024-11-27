@@ -23,7 +23,7 @@
    ```bash
    git clone https://github.com/yoda007008/posts_api.git
    ```
-2. Примените миграции:
+2. Примените миграции (если для Docker контейнера, то введите эту команду в bash контейнера, а не проекта):
 
    ```bash
    alembic upgrade head
