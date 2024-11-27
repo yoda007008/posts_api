@@ -23,8 +23,12 @@
    ```bash
    git clone https://github.com/yoda007008/posts_api.git
    ```
+2. Примените миграции:
 
-3. Сборка Docker образ:
+   ```bash
+   alembic upgrade head
+   ```
+3. Сборка Docker образа:
 
    ```bash
    docker-compose build .
@@ -33,10 +37,10 @@
 4. Запустите контейнер:
 
    ```bash
-   docker run -d -p 9000:8000 ваше-имя-образа
+   docker-compose up
    ```
 
-Теперь приложение будет доступно по адресу `http://localhost:8000`.
+Теперь приложение будет доступно по адресу `http://localhost:9000`.
 
 
 
